@@ -1,16 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
-
 :root {
-  --bg: #faf9f7;
-  --fg: #1a1a1a;
-  --accent: #e8533a;
-  --accent2: #3a7bd5;
-  --muted: #6b6b6b;
-  --border: #e8e4df;
+  --bg: #fffaff;
+  --fg: #1e1b18;
+
+  --primary: #0039c3;
+  --secondary: #3e92cc;
+
+  --accent: #eb9b00;
+
+  --muted: #6b7280;
+  --border: #dbe4f0;
   --card: #ffffff;
-  --teal: #0d9488;
 }
 
 * {
@@ -26,12 +29,8 @@ html {
 body {
   background-color: var(--bg);
   color: var(--fg);
-  font-family: 'DM Sans', sans-serif;
+  font-family: "Inter", sans-serif;
   overflow-x: hidden;
-}
-
-.playfair {
-  font-family: 'Playfair Display', serif;
 }
 
 ::-webkit-scrollbar {
@@ -43,7 +42,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--accent);
+  background: var(--primary);
   border-radius: 4px;
 }
 
@@ -53,7 +52,7 @@ body {
 }
 
 .accent-underline::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -4px;
   left: 0;
