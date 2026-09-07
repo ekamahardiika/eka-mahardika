@@ -9,27 +9,42 @@ export default function Contact() {
   const contacts = [
     {
       title: "Email",
-      value: "wayaneka2003@gmail.com",
       href: "mailto:wayaneka2003@gmail.com",
       icon: <Mail size={16} />,
     },
     {
       title: "WhatsApp",
-      value: "+62 8124 6457 249",
       href: "https://wa.me/6281246457249",
       icon: <Phone size={16} />,
     },
     {
       title: "Instagram",
-      value: "@ekamahardiika",
       href: "https://instagram.com/ekamahardiika",
       icon: <Camera size={16} />,
     },
     {
       title: "LinkedIn",
-      value: "linkedin.com/in/ekamahardika",
       href: "https://www.linkedin.com/in/i-wayan-eka-mahardika-a1385835a/",
       icon: <Link size={16} />,
+    },
+    {
+      title: "GitHub",
+      href: "https://github.com/ekamahardiika",
+      icon: (
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+          <path d="M9 18c-4.51 2-5-2-7-2" />
+        </svg>
+      ),
     },
   ];
 
@@ -37,7 +52,7 @@ export default function Contact() {
     <section
       id="contact"
       style={{
-        padding: "5rem 2rem", // Tetap menjaga padding samping 2rem konsisten
+        padding: "5rem 2rem",
         maxWidth: 1100,
         margin: "0 auto",
         width: "100%",
@@ -61,9 +76,6 @@ export default function Contact() {
           }
         }
         .contact-card:hover .contact-label {
-          color: rgba(255,255,255,0.7) !important;
-        }
-        .contact-card:hover .contact-value {
           color: #fff !important;
         }
         .contact-card:hover .contact-icon {
@@ -77,7 +89,6 @@ export default function Contact() {
         }}
       />
 
-      {/* Grid wrapper dengan flex-col di mobile agar tidak merusak padding samping */}
       <div
         className="flex flex-col md:grid"
         style={{
@@ -137,7 +148,7 @@ export default function Contact() {
             width: "100%",
           }}
         >
-          {contacts.map((item, index) => {
+          {contacts.map((item) => {
             return (
               <a
                 key={item.title}
@@ -179,43 +190,17 @@ export default function Contact() {
                     {item.icon}
                   </span>
 
-                  <div
-                    className="flex flex-col sm:flex-row sm:items-center"
-                    style={{ gap: "0.15rem sm:0.5rem", minWidth: 0 }}
+                  <span
+                    className="contact-label"
+                    style={{
+                      fontSize: "0.85rem",
+                      color: "var(--fg)",
+                      fontWeight: 600,
+                      transition: "color 0.3s ease",
+                    }}
                   >
-                    <span
-                      className="contact-label"
-                      style={{
-                        fontSize: "0.75rem",
-                        color: "var(--primary)",
-                        fontWeight: 500,
-                        textTransform: "uppercase",
-                        transition: "color 0.3s ease",
-                      }}
-                    >
-                      {item.title}
-                    </span>
-                    <span
-                      className="hidden sm:inline"
-                      style={{ color: "var(--border)", fontSize: "0.8rem" }}
-                    >
-                      ·
-                    </span>
-                    <span
-                      className="contact-value"
-                      style={{
-                        fontSize: "clamp(0.8rem, 3.5vw, 0.9rem)",
-                        color: "var(--fg)",
-                        fontWeight: 600,
-                        transition: "color 0.3s ease",
-                        whiteSpace: "nowrap",
-                        overflow: "hidden",
-                        textOverflow: "ellipsis",
-                      }}
-                    >
-                      {item.value}
-                    </span>
-                  </div>
+                    {item.title}
+                  </span>
                 </div>
 
                 <span
