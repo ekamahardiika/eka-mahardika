@@ -27,147 +27,143 @@ const projects: Project[] = [
     title: "Ravindra Beer Store",
     category: "Website",
     tags: [
-      "Laravel 13",
-      "PHP 8.3",
+      "Laravel",
+      "Breeze",
+      "Herd",
       "Tailwind CSS",
       "Alpine.js",
-      "Vite",
       "MySQL",
-    ],
-    coverImage: "images/portfolio/A1.png",
-    summary:
-      "Aplikasi e-commerce berbasis web untuk toko minuman yang mengintegrasikan sistem pembatasan usia (Age Verification). Platform ini menyediakan pengalaman belanja yang lancar bagi pelanggan serta panel administrasi lengkap untuk manajemen produk, pesanan, dan campaign email otomatis.",
-    features: [
-      "Halaman Publik Interaktif: Beranda, Tentang Kami, Galeri, dan Form Kontak.",
-      "Verifikasi Usia (Age Verification): Sistem validasi umur sebelum pelanggan dapat mengakses katalog produk.",
-      "Autentikasi Keamanan Tinggi: Registrasi akun dilengkapi verifikasi kode OTP dan integrasi Laravel Breeze.",
-      "Manajemen Transaksi & Katalog: Halaman detail produk, riwayat pesanan, pembatalan otomatis/manual, dan sistem testimoni pelanggan.",
-      "Panel Administrasi Lengkap: Pengelolaan stok/pesanan, broadcast email promosi via Laravel Mail (Mailable), dan moderasi ulasan.",
-    ],
-    images: [
-      {
-        src: "images/portfolio/A2.png",
-        caption:
-          "Tampilan katalog produk dengan filter kategori dan sistem verifikasi usia.",
-      },
-    ],
-    demoUrl: "https://ravindra-beer.vercel.app",
-  },
-  {
-    id: 2,
-    title: "Subak Penyalin",
-    category: "Website",
-    tags: [
-      "Laravel 13",
-      "PHP 8.3",
-      "Tailwind CSS",
-      "Alpine.js",
-      "DomPDF",
-      "Pest PHP",
+      "SMPTP Email"
     ],
     coverImage: "images/portfolio/B1.png",
     summary:
-      "Platform digital rantai pasok pertanian yang terinspirasi dari filosofi pengelolaan pertanian tradisional Bali (Subak). Sistem ini menghubungkan secara langsung petani dan konsumen untuk distribusi hasil panen yang lebih efisien dan transparan.",
+      "Ravindra Beer Store adalah supplier beer di daerah dalung. Dimana saya membuat web untuk mengenalkan toko dan memiliki fungsi e-commerce sederhana. Aplikasi ini mencakup sisi customer untuk melihat produk dan melakukan pemesanan, serta panel admin untuk mengelola produk, pesanan, konten halaman, dan broadcast promosi ke pelanggan.",
     features: [
-      "Multi-Role Access Control: Hak akses khusus yang disesuaikan untuk Admin, Petani, dan Konsumen.",
-      "Portal Khusus Petani: Manajemen stok hasil panen, pemantauan riwayat penjualan, dan cetak laporan otomatis.",
-      "Portal Konsumen: Jelajah katalog hasil pertanian segar, checkout instan, serta pelacakan status pesanan.",
-      "Dashboard Administrator: Pengelolaan data pengguna/petani, penetapan harga pasar, eksekusi pemesanan, dan ekspor laporan penjualan PDF.",
-      "Pengujian Terintegrasi: Kode program telah diuji menggunakan automated testing Pest PHP untuk menjamin stabilitas.",
+      "Halaman Publik berupa Beranda, Tentang Kami, Galeri, dan Form Kontak.",
+      "Autentikasi menggunakan Laravel Breeze meliputi registrasi akun dilengkapi verifikasi kode OTP",
+      "Menerapkan Role Based Access karena ada dua pengguna yaitu admin dan pelanggan",
+      "Manajemen Transaksi & Katalog, Halaman detail produk, riwayat pesanan, pembatalan otomatis/manual, dan sistem testimoni pelanggan.",
+      "Panel Administrasi meliputi pengelolaan stok/pesanan, broadcast email promosi via Laravel Mail.",
     ],
     images: [
       {
         src: "images/portfolio/B2.png",
-        caption:
-          "Dashboard platform yang memfasilitasi alur distribusi dari petani ke konsumen.",
+        
       },
     ],
+    demoUrl: "https://youtu.be/jKT8UqZHxgk",
+  },
+    {
+    id: 2,
+    title: "Green Guardian",
+    category: "Android",
+    tags: [
+      "Godot Engine",
+      "GDScript",
+      "Android Studio",
+      "Adobe Photoshop",
+    ],
+    coverImage: "images/portfolio/C1.png",
+    summary:
+      "Game Green Guardian ini dibuat untuk menuntaskan tugas akhir saat saya menempuh pendidikan di kampus. Game ini memiliki mekanik Platformer berbasis 2D bertema edukasi lingkungan. Game ini mengajarkan pemain mengenai pemilahan jenis sampah (organik, anorganik, dan B3) melalui gameplay interaktif yang menggabungkan elemen tantangan mekanik dan kuis pemahaman.",
+    features: [
+      "Mekanik 2D Platformer dengan Navigasi level dengan sistem HP (Health Bar), tantangan musuh patrol, flying enemy, hingga shooter.",
+      "3 Variasi Kuis Edukati sebagai Tantangan kuis berupa pilihan teks, identifikasi gambar, serta mekanisme drag and drop pemilahan sampah.",
+      "Sistem Koleksi & Marketplace Skin dari sampah yang dikumpulkan sepanjang game dapat ditukarkan dengan berbagai variasi skin karakter.",
+      "Sistem star untuk mengukur tingakt penyelesaian tiap level game"
+    ],
+    images: [
+      {
+        src: "images/portfolio/C2.png",
+      },
+    ],
+    demoUrl: "https://youtu.be/5E0sPIkNx-o",
+    
+  },
+  {
+    id: 5,
+    title: "Subak Penyalin",
+    category: "Website",
+    tags: [
+      "Laravel",
+      "Herd",
+      "Breeze",
+      "Tailwind CSS",
+      "Alpine.js",
+      "DomPDF",
+      "MySQL",
+    ],
+    coverImage: "images/portfolio/A1.png",
+    summary:
+      "Subak penyalin adalah subak yang berada di Tabanan. Web ini dibuat untuk menghubungkan petani dan konsumen dalam distribusi hasil pertanian. Terdapat 3 entitas pada web ini yaitu admin, petani dan konsumen.",
+    features: [
+      "Multi-Role Access Control khusus yang disesuaikan untuk Admin, Petani, dan Konsumen.",
+      "Halaman  Petani meliputi Manajemen stok hasil gabah, pemantauan riwayat penjualan, dan cetak laporan otomatis.",
+      "Halaman Konsumen meliputi Jelajah katalog hasil gabah, checkout instan, serta pelacakan status pesanan.",
+      "Halaman Admini meliputi Pengelolaan data pengguna/petani, penetapan harga pasar, eksekusi pemesanan, dan ekspor laporan penjualan PDF.",
+    ],
+    images: [
+      {
+        src: "images/portfolio/A2.png",
+      },
+    ],
+    demoUrl: "https://youtu.be/jSbJkDnja7I",
   },
   {
     id: 3,
     title: "Sanggar Kayonan",
     category: "Website",
     tags: [
-      "Laravel 13",
-      "PHP 8.3",
+      "Laravel",
+      "Herd",
+      "Breeze",
       "Tailwind CSS",
       "Alpine.js",
-      "Laravel Breeze",
       "DomPDF",
-    ],
-    coverImage: "images/portfolio/C1.png",
-    summary:
-      "Profil perusahaan digital sekaligus platform manajemen operasional untuk sanggar seni tari tradisional Bali. Mengintegrasikan landing page publik interaktif dengan sistem portal anggota untuk pengelolaan jadwal latihan dan pementasan.",
-    features: [
-      "Landing Page Interaktif: Slider hero dinamis, scroll interaktif, jadwal pementasan, serta berita kegiatan sanggar.",
-      "Portal Anggota (Member): Pendaftaran pementasan mandiri, pengecekan jadwal latihan, dan konfirmasi kehadiran.",
-      "Manajemen Absensi & Pelatihan: Admin dapat mengelola jadwal latihan, tipe kelas, serta mencatat kehadiran peserta secara otomatis.",
-      "Ekspor Laporan PDF: Kemudahan rekapitulasi data absensi dan daftar pendaftar pementasan berbasis DomPDF.",
-    ],
-    images: [
-      {
-        src: "images/portfolio/C2.png",
-        caption:
-          "Landing page utama Sanggar Kayonan dengan informasi pertunjukan dan profil sanggar.",
-      },
-    ],
-  },
-  {
-    id: 4,
-    title: "My GYM Gue",
-    category: "Mobile",
-    tags: [
-      "Kotlin",
-      "Jetpack Compose",
-      "Room DB",
-      "Navigation Compose",
-      "Coroutines",
+      "MySQL",
     ],
     coverImage: "images/portfolio/D1.png",
     summary:
-      "Aplikasi Android native untuk pelacakan dan manajemen program latihan kebugaran (gym). Dirancang untuk membantu pengguna menyusun workout split, mencatat progres repetisi dan beban, serta memantau perkembangan fisik secara konsisten.",
+      "Sanggar Kayonan adalah sanggar seni yang berada di daerah Klungkung. Sanggar ini meliputi kesenian tari dan tabuh. Website ini dibuat untuk manajemen anggota, kegiatan, latihan dan laiinya yang sebelumnya masih dilakukan secara manual.",
     features: [
-      "Penyusunan Workout Program: Bebas mengelompokkan split latihan (Push/Pull/Legs) beserta daftar gerakan spesifik per bagian tubuh.",
-      "Live Workout Session & Timer: Pencatatan beban/repetisi secara real-time yang didukung Foreground Service & Notification agar timer tetap aktif di background.",
-      "Visualisasi Progres: Grafik statistik perkembangan kekuatan (beban maksimal & total repetisi) dari waktu ke waktu.",
-      "Riwayat & Analisis Latihan: Dashboard riwayat aktivitas bulanan, statistik hari aktif, serta filter rekapitulasi periode.",
-      "Sinkronisasi & Backup Data: Fitur overwrite mode untuk pencadangan dan pemindahan seluruh data latihan secara aman.",
+      "Halaman Publik berupa Beranda, Tentang Kami, jadwal pementasan, serta berita kegiatan sanggar.",
+      "Halaman Anggota meliputi pendaftaran pementasan mandiri, pengecekan jadwal latihan, dan konfirmasi kehadiran.",
+      "Halaman Admin meliputi manajemen Absensi & Pelatihan. Admin juga dapat mengelola jadwal latihan, tipe kelas, serta mencatat kehadiran peserta secara otomatis.",
+      "Ekspor Laporan PDF pada halaman admin untuk kemudahan rekapitulasi data absensi dan daftar pendaftar pementasan menggunakan DomPDF.",
     ],
     images: [
       {
         src: "images/portfolio/D2.png",
-        caption:
-          "Antarmuka pencatatan set, repetisi, dan timer latihan berbasis Jetpack Compose.",
       },
     ],
+    demoUrl: "https://youtu.be/j7ZVAIvxfDI",
   },
   {
-    id: 5,
-    title: "Green Guardian",
-    category: "Game",
+    id: 4,
+    title: "My GYM Gue",
+    category: "Android",
     tags: [
-      "Godot Engine",
-      "GDScript",
+      "Kotlin",
+      "Jetpack Compose",
       "Android Studio",
-      "Adobe Photoshop",
-      "2D Platformer",
+      "SQLite"
     ],
     coverImage: "images/portfolio/E1.png",
     summary:
-      "Game Android 2D Platformer bertema edukasi lingkungan. Game ini mengajarkan pemain mengenai pemilahan jenis sampah (organik, anorganik, dan B3) melalui gameplay interaktif yang menggabungkan elemen tantangan mekanik dan kuis pemahaman.",
+      "Aplikasi ini dibuat untuk menunjang kebutuhan saya sendiri dimana ingin setiap latihan bisa mengetahui progres dan bisa meningkat tiap latihannya entah itu beban ataupun repetisi angkatan bebannya (Progressive Overload). Aplikasi ini juga bisa membuat pembagian split latihan, pencatatan set dan repetisi tiap sesi, hingga pelacakan progres angkat beban dari waktu ke waktu.",
     features: [
-      "Mekanik 2D Platformer: Navigasi level dengan sistem HP (Health Bar), tantangan musuh patrol, flying enemy, hingga shooter.",
-      "3 Variasi Kuis Edukatif: Tantangan kuis berupa pilihan teks, identifikasi gambar, serta mekanisme drag and drop pemilahan sampah.",
-      "Sistem Koleksi & Marketplace Skin: Sampah yang dikumpulkan sepanjang game dapat ditukarkan dengan berbagai variasi skin karakter.",
-      "Desain Aset Custom: Seluruh visual aset game dirancang khusus menggunakan Adobe Photoshop untuk menciptakan estetika edukatif yang menarik.",
+      "Penyusunan workout program  mengelompokkan split latihan beserta daftar gerakan spesifik per bagian tubuh.",
+      "Live Workout Session & Timer untuk pencatatan beban/repetisi secara real-time yang didukung Foreground Service & Notification agar timer tetap aktif di background.",
+      "Grafik statistik perkembangan kekuatan (beban maksimal & total repetisi) dari waktu ke waktu.",
+      "Riwayat & Analisis Latihan dengan dashboard riwayat aktivitas bulanan, statistik hari aktif, serta filter rekapitulasi periode.",
+      "Sinkronisasi & Backup Data dengan Fitur overwrite mode untuk pencadangan dan pemindahan seluruh data latihan secara aman.",
     ],
     images: [
       {
         src: "images/portfolio/E2.png",
-        caption:
-          "Gameplay 2D platformer saat mengumpulkan sampah dan menghadapi rintangan musuh.",
       },
     ],
+    demoUrl: "https://youtube.com/shorts/W5eQ6Yb4f3k?feature=share",
   },
 ];
 
@@ -718,7 +714,7 @@ export default function Portfolio() {
           color: "var(--fg, #111)",
         }}
       >
-        Portofolio <span style={{ color: "var(--primary, #2563eb)" }}>Proyek IT</span>
+        Portofolio & <span style={{ color: "var(--primary, #2563eb)" }}> HomeLab</span>
       </h2>
 
       {/* Filter Tabs */}
