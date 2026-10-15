@@ -116,8 +116,8 @@ export default function Navbar() {
         <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
           {/* CTA Button - Sembunyi di mobile super kecil jika diperlukan, tapi di sini tetap dimunculkan */}
           <a
-            href="/files/CV_I Wayan Eka Mahardika_ID.pdf"
-            download="CV_I Wayan Eka Mahardika_ID.pdf"
+            href="/files/I_Wayan_Eka_Mahardika_CV.pdf"
+            download="I_Wayan_Eka_Mahardika_CV.pdf"
             className="hidden sm:flex" // Sembunyi di layar < 640px agar tidak terlalu padat
             style={{
               background: "var(--primary)",
