@@ -28,6 +28,8 @@ const skillsList = [
   "IT Support",
   "Active Directory",
   "Windows Troubleshooting",
+  "Linux OS",
+  "Virtualization",
   "Basic Network",
   "Microsoft Office",
   "Graphic Design",

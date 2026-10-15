@@ -15,12 +15,13 @@ type Project = {
   tags: string[];
   coverImage: string;
   summary: string;
-  features: string[];
+  features?: string[]; // <-- Dibuat opsional dengan tanda '?'
   images: ImageItem[];
   demoUrl?: string;
+  demoLabel?: string;
 };
 
-// ─── DATA PROJECT (PATH GAMBAR DISESUAIKAN: A1, A2, B1, B2, DST) ──────────────
+// ─── DATA PROJECT ────────────────────────────────────────────────────────────
 const projects: Project[] = [
   {
     id: 1,
@@ -33,7 +34,7 @@ const projects: Project[] = [
       "Tailwind CSS",
       "Alpine.js",
       "MySQL",
-      "SMPTP Email"
+      "SMPTP Email",
     ],
     coverImage: "images/portfolio/B1.png",
     summary:
@@ -48,21 +49,16 @@ const projects: Project[] = [
     images: [
       {
         src: "images/portfolio/B2.png",
-        
       },
     ],
     demoUrl: "https://youtu.be/jKT8UqZHxgk",
+    demoLabel: "Lihat Video Demo ↗",
   },
-    {
+  {
     id: 2,
     title: "Green Guardian",
     category: "Android",
-    tags: [
-      "Godot Engine",
-      "GDScript",
-      "Android Studio",
-      "Adobe Photoshop",
-    ],
+    tags: ["Godot Engine", "GDScript", "Android Studio", "Adobe Photoshop"],
     coverImage: "images/portfolio/C1.png",
     summary:
       "Game Green Guardian ini dibuat untuk menuntaskan tugas akhir saat saya menempuh pendidikan di kampus. Game ini memiliki mekanik Platformer berbasis 2D bertema edukasi lingkungan. Game ini mengajarkan pemain mengenai pemilahan jenis sampah (organik, anorganik, dan B3) melalui gameplay interaktif yang menggabungkan elemen tantangan mekanik dan kuis pemahaman.",
@@ -70,7 +66,7 @@ const projects: Project[] = [
       "Mekanik 2D Platformer dengan Navigasi level dengan sistem HP (Health Bar), tantangan musuh patrol, flying enemy, hingga shooter.",
       "3 Variasi Kuis Edukati sebagai Tantangan kuis berupa pilihan teks, identifikasi gambar, serta mekanisme drag and drop pemilahan sampah.",
       "Sistem Koleksi & Marketplace Skin dari sampah yang dikumpulkan sepanjang game dapat ditukarkan dengan berbagai variasi skin karakter.",
-      "Sistem star untuk mengukur tingakt penyelesaian tiap level game"
+      "Sistem star untuk mengukur tingakt penyelesaian tiap level game",
     ],
     images: [
       {
@@ -78,7 +74,7 @@ const projects: Project[] = [
       },
     ],
     demoUrl: "https://youtu.be/5E0sPIkNx-o",
-    
+    demoLabel: "Tonton Gameplay ↗",
   },
   {
     id: 5,
@@ -142,12 +138,7 @@ const projects: Project[] = [
     id: 4,
     title: "My GYM Gue",
     category: "Android",
-    tags: [
-      "Kotlin",
-      "Jetpack Compose",
-      "Android Studio",
-      "SQLite"
-    ],
+    tags: ["Kotlin", "Jetpack Compose", "Android Studio", "SQLite"],
     coverImage: "images/portfolio/E1.png",
     summary:
       "Aplikasi ini dibuat untuk menunjang kebutuhan saya sendiri dimana ingin setiap latihan bisa mengetahui progres dan bisa meningkat tiap latihannya entah itu beban ataupun repetisi angkatan bebannya (Progressive Overload). Aplikasi ini juga bisa membuat pembagian split latihan, pencatatan set dan repetisi tiap sesi, hingga pelacakan progres angkat beban dari waktu ke waktu.",
@@ -164,6 +155,97 @@ const projects: Project[] = [
       },
     ],
     demoUrl: "https://youtube.com/shorts/W5eQ6Yb4f3k?feature=share",
+    demoLabel: "Tonton YouTube Short ↗",
+  },
+  {
+    id: 6,
+    title: "Inventory & Procurement System",
+    category: "Spreadsheet",
+    tags: ["Google Sheets", "Microsoft Excel"],
+    coverImage: "images/portfolio/Laptop 1.png",
+    summary:
+      "Sistem manajemen persediaan dan pengadaan barang yang mengintegrasikan data produk, supplier, dan transaksi. Dibangun menggunakan relasi antar tabel serta fungsi lookup dan perhitungan stok otomatis untuk menghasilkan laporan persediaan yang akurat. Google sheet ini meruapakan project dummy untuk latihan membuat sistem inventory & procurement sederhana.",
+    images: [
+      {
+        src: "images/portfolio/Laptop 1.png",
+      },
+    ],
+    demoUrl: "https://docs.google.com/spreadsheets/d/1pcRN76EmmYZJ4AANXNAlRdg5LWNzy_t5deJkVFWoVuI/edit?usp=sharing",
+    demoLabel: "Lihat Spreadsheet ↗",
+  },
+  {
+    id: 7,
+    title: "HR Management System",
+    category: "Spreadsheet",
+    tags: ["Google Sheets", "Microsoft Excel"],
+    coverImage: "images/portfolio/Laptop 2.png",
+    summary:
+      "Sistem pengelolaan sumber daya manusia yang mencakup data karyawan, cuti, lembur, aset, dan payroll. Data terhubung melalui ID karyawan dengan otomatisasi perhitungan dan pengambilan data menggunakan fungsi lookup serta formula Excel. Google sheet ini meruapakan project dummy untuk latihan membuat sistem HR sederhana.",
+    images: [
+      {
+        src: "images/portfolio/Laptop 2.png",
+      },
+    ],
+    demoUrl: "https://docs.google.com/spreadsheets/d/1WtNwdiHO-uS6tVAFFf17TXlhO6909zSeHXeg-_Hluss/edit?usp=sharing",
+    demoLabel: "Lihat Spreadsheet ↗",
+  },
+  {
+    id: 8,
+    title: "Expense Tracker Monthly",
+    category: "Spreadsheet",
+    tags: ["Google Sheets", "Microsoft Excel"],
+    coverImage: "images/portfolio/Laptop 3.png",
+    summary:
+      "File ini adalah sistem pencatatan keuangan pribadi berbasis Excel yang memungkinkan pengguna melacak pemasukan, pengeluaran, saldo, dan ringkasan per kategori — semua dalam satu file yang saling terhubung. Terdiri dari 5 sheet dengan peran masing-masing. Sheet ini dibuat sebagai latihan untuk mengelola keuangan pribadi secara sederhana namun efektif.",
+    images: [
+      {
+        src: "images/portfolio/Laptop 3.png",
+      },
+    ],
+    demoUrl: "https://docs.google.com/spreadsheets/d/1Qw4CFTD6A-kyJuklv56SYyhsWQnkwvXeFj8pmdGGupw/edit?usp=sharing",
+    demoLabel: "Lihat Spreadsheet ↗",
+  },
+  {
+    id: 9,
+    title: "Kocek by Djoin",
+    category: "Grapic Design",
+    tags: ["Adobe Photoshop, Adobe Illustrator, Canva, Figma, Google Slides"],
+    coverImage: "images/portfolio/Kocek.png",
+    summary:
+      "Design ini adalah hasil dari magang di Djoin. Dimana saya membuat design untuk keperluan promosi dan branding Kocek. Design ini mencakup berbagai elemen visual seperti poster, banner, dan materi promosi lainnya yang dirancang untuk meningkatkan visibilitas dan daya tarik brand Kocek.",
+    images: [
+      {
+        src: "images/portfolio/Kocek1.png",
+      },
+    ],
+  },
+  {
+    id: 10,
+    title: "Travel Design",
+    category: "Grapic Design",
+    tags: ["Adobe Photoshop, Adobe Illustrator, Canva"],
+    coverImage: "images/portfolio/Liburan.png",
+    summary:
+      "Design ini adalah project freelance yang saya buat untuk keperluan promosi dan branding Travel. Design ini mencakup berbagai elemen visual seperti poster, banner, dan materi promosi lainnya yang dirancang untuk meningkatkan visibilitas dan daya tarik brand Travel.",
+    images: [
+      {
+        src: "images/portfolio/Liburan1.png",
+      },
+    ],
+  },
+  {
+    id: 11,
+    title: "Food Design",
+    category: "Grapic Design",
+    tags: ["Adobe Photoshop, Adobe Illustrator, Canva"],
+    coverImage: "images/portfolio/Makanan.png",
+    summary:
+      "Design ini adalah project freelance yang saya buat untuk keperluan promosi dan branding Food. Design ini mencakup berbagai elemen visual seperti poster, banner, dan materi promosi lainnya yang dirancang untuk meningkatkan visibilitas dan daya tarik brand Food.",
+    images: [
+      {
+        src: "images/portfolio/Makanan1.png",
+      },
+    ],
   },
 ];
 
@@ -372,41 +454,43 @@ function ProjectModal({
               </p>
             </div>
 
-            {/* Fitur Utama */}
-            <div>
-              <h4
-                style={{
-                  fontSize: "1rem",
-                  fontWeight: 700,
-                  color: "var(--fg, #111)",
-                  marginBottom: "0.5rem",
-                }}
-              >
-                Fitur Utama
-              </h4>
-              <ul
-                style={{
-                  margin: 0,
-                  paddingLeft: "1.2rem",
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "0.4rem",
-                }}
-              >
-                {project.features.map((feat, idx) => (
-                  <li
-                    key={idx}
-                    style={{
-                      fontSize: "0.85rem",
-                      color: "var(--muted, #4b5563)",
-                      lineHeight: 1.55,
-                    }}
-                  >
-                    {feat}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            {/* Fitur Utama (Hanya ditampilkan jika array features ada & memiliki isi) */}
+            {project.features && project.features.length > 0 && (
+              <div>
+                <h4
+                  style={{
+                    fontSize: "1rem",
+                    fontWeight: 700,
+                    color: "var(--fg, #111)",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  Fitur Utama
+                </h4>
+                <ul
+                  style={{
+                    margin: 0,
+                    paddingLeft: "1.2rem",
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "0.4rem",
+                  }}
+                >
+                  {project.features.map((feat, idx) => (
+                    <li
+                      key={idx}
+                      style={{
+                        fontSize: "0.85rem",
+                        color: "var(--muted, #4b5563)",
+                        lineHeight: 1.55,
+                      }}
+                    >
+                      {feat}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
             {/* Tangkapan Layar / Galeri Gambar */}
             <div>
@@ -477,7 +561,7 @@ function ProjectModal({
             </div>
           </div>
 
-          {/* Footer (Tombol Demo saja) */}
+          {/* Footer (Tombol Demo dengan Teks Kustom / Default) */}
           {project.demoUrl && (
             <div
               style={{
@@ -506,7 +590,7 @@ function ProjectModal({
                   gap: "0.35rem",
                 }}
               >
-                Lihat Demo Live ↗
+                {project.demoLabel ?? "Lihat Demo Live ↗"}
               </a>
             </div>
           )}
@@ -663,13 +747,11 @@ export default function Portfolio() {
 
   const categories = useMemo(
     () => ["All", ...Array.from(new Set(projects.map((p) => p.category)))],
-    []
+    [],
   );
 
   const filtered =
-    active === "All"
-      ? projects
-      : projects.filter((p) => p.category === active);
+    active === "All" ? projects : projects.filter((p) => p.category === active);
 
   return (
     <section
@@ -714,7 +796,8 @@ export default function Portfolio() {
           color: "var(--fg, #111)",
         }}
       >
-        Portofolio & <span style={{ color: "var(--primary, #2563eb)" }}> HomeLab</span>
+        Portofolio &{" "}
+        <span style={{ color: "var(--primary, #2563eb)" }}> HomeLab</span>
       </h2>
 
       {/* Filter Tabs */}
