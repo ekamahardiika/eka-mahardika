@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
-const links = ["Beranda", "Tentang Saya", "Portfolio", "Kontak"];
+const links = ["Beranda", "Tentang S", "Portfolio", "Kontak"];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
