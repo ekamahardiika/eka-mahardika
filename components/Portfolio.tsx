@@ -77,7 +77,7 @@ const projects: Project[] = [
     demoLabel: "Tonton Gameplay ↗",
   },
   {
-    id: 5,
+    id: 18,
     title: "Subak Penyalin",
     category: "Website",
     tags: [
@@ -156,6 +156,20 @@ const projects: Project[] = [
     ],
     demoUrl: "https://youtube.com/shorts/W5eQ6Yb4f3k?feature=share",
     demoLabel: "Tonton YouTube Short ↗",
+  },{
+    id: 5,
+    title: "Windows Server 2022 HomeLab",
+    category: "IT Helpdesk Lab",
+    tags: ["VirtualBox", "Windows Server 2022", "Windows 11"],
+    coverImage: "images/portfolio/ITHelpdeskC.png",
+    summary:
+      "Membangun infrastruktur server virtual (Homelab) menggunakan VirtualBox sebagai virtual machine untuk mensimulasikan lingkungan jaringan enterprise berbasis Windows Server 2022. Belajar Mengonfigurasi Active Directory, Group Policy Object (GPO), dan File Sharing untuk manajemen pengguna, kebijakan keamanan, dan otorisasi akses.",
+    images: [
+      {
+        src: "images/portfolio/ITHelpdesk1.png",
+      },
+    ],
+
   },
   {
     id: 6,
@@ -208,7 +222,7 @@ const projects: Project[] = [
   {
     id: 9,
     title: "Kocek by Djoin",
-    category: "Grapic Design",
+    category: "Graphic Design",
     tags: ["Adobe Photoshop, Adobe Illustrator, Canva, Figma, Google Slides"],
     coverImage: "images/portfolio/Kocek.png",
     summary:
@@ -222,7 +236,7 @@ const projects: Project[] = [
   {
     id: 10,
     title: "Travel Design",
-    category: "Grapic Design",
+    category: "Graphic Design",
     tags: ["Adobe Photoshop, Adobe Illustrator, Canva"],
     coverImage: "images/portfolio/Liburan.png",
     summary:
@@ -236,7 +250,7 @@ const projects: Project[] = [
   {
     id: 11,
     title: "Food Design",
-    category: "Grapic Design",
+    category: "Graphic Design",
     tags: ["Adobe Photoshop, Adobe Illustrator, Canva"],
     coverImage: "images/portfolio/Makanan.png",
     summary:
