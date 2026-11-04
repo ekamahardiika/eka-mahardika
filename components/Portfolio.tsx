@@ -223,7 +223,7 @@ const projects: Project[] = [
     id: 9,
     title: "Kocek by Djoin",
     category: "Graphic Design",
-    tags: ["Adobe Photoshop, Adobe Illustrator, Canva, Figma, Google Slides"],
+    tags: ["Adobe Photoshop", "Adobe Illustrator", "Canva", "Figma", "Google Slides"],
     coverImage: "images/portfolio/Kocek.png",
     summary:
       "Design ini adalah hasil dari magang di Djoin. Dimana saya membuat design untuk keperluan promosi dan branding Kocek. Design ini mencakup berbagai elemen visual seperti poster, banner, dan materi promosi lainnya yang dirancang untuk meningkatkan visibilitas dan daya tarik brand Kocek.",
@@ -237,7 +237,7 @@ const projects: Project[] = [
     id: 10,
     title: "Travel Design",
     category: "Graphic Design",
-    tags: ["Adobe Photoshop, Adobe Illustrator, Canva"],
+    tags: ["Adobe Photoshop", "Adobe Illustrator", "Canva"],
     coverImage: "images/portfolio/Liburan.png",
     summary:
       "Design ini adalah project freelance yang saya buat untuk keperluan promosi dan branding Travel. Design ini mencakup berbagai elemen visual seperti poster, banner, dan materi promosi lainnya yang dirancang untuk meningkatkan visibilitas dan daya tarik brand Travel.",
@@ -251,7 +251,7 @@ const projects: Project[] = [
     id: 11,
     title: "Food Design",
     category: "Graphic Design",
-    tags: ["Adobe Photoshop, Adobe Illustrator, Canva"],
+    tags: ["Adobe Photoshop", "Adobe Illustrator", "Canva"],
     coverImage: "images/portfolio/Makanan.png",
     summary:
       "Design ini adalah project freelance yang saya buat untuk keperluan promosi dan branding Food. Design ini mencakup berbagai elemen visual seperti poster, banner, dan materi promosi lainnya yang dirancang untuk meningkatkan visibilitas dan daya tarik brand Food.",
