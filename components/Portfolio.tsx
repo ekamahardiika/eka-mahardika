@@ -156,7 +156,8 @@ const projects: Project[] = [
     ],
     demoUrl: "https://youtube.com/shorts/W5eQ6Yb4f3k?feature=share",
     demoLabel: "Tonton YouTube Short ↗",
-  },{
+  },
+  {
     id: 5,
     title: "Windows Server 2022 HomeLab",
     category: "IT Helpdesk Lab",
@@ -169,10 +170,28 @@ const projects: Project[] = [
         src: "images/portfolio/ITHelpdesk1.png",
       },
     ],
-
+  },{
+    id: 6,
+    title: "Static Routing Homelab",
+    category: "IT Helpdesk Lab",
+    tags: ["Cisco Packet Tracer", "Static Routing", "Networking"],
+    coverImage: "images/portfolio/Static Routing Cover.png",
+    summary:
+      "Simulasi topologi jaringan komputer menggunakan Cisco Packet Tracer yang merancang arsitektur jaringan lokal(LAN) terdistribusi yang menghubungkan empat segmen berbeda (R1, R2, R3, dan R4). Masing-masing router terhubung satu sama lain melalui jaringan backbone antar-router, dan setiap router mengelola sebuah switch yang mendistribusikan koneksi ke beberapa komputer client di area masing-masing dengan cakupan alamat IP subnet.",
+    features: [
+      "Menerapkan 4 unit router (R1 sampai R4) yang saling terhubung untuk menjembatani komunikasi antar-segmen jaringan yang berbeda wilayah.",
+      "Membagi jaringan ke dalam empat blok subnet 192.168.x.0/24 yang berbeda untuk setiap area: Segmen 1 (Biru): 192.168.1.0/24 dengan 3 unit PC (PC0, PC1, PC2). Segmen 2 (Ungu Muda): 192.168.2.0/24 dengan 3 unit PC (PC3, PC4, PC5). Segmen 3 (Merah Muda): 192.168.3.0/24 dengan 3 unit PC (PC6, PC7, PC8). Segmen 4 (Hijau): 192.168.4.0/24 dengan 3 unit PC (PC9, PC10, PC11).",
+      "Memanfaatkan jalur penghubung dengan network Address Point antar-router menggunakan segmen IP 10.10.1.0/24, 10.10.2.0/24, dan 10.10.3.0/24 untuk memastikan komunikasi data lintas router.",
+      "Setiap router dilengkapi dengan perangkat Switch (Switch-PT S1, S2, S3, S4) yang bertindak sebagai titik sentral koneksi bagi semua PC",
+    ],
+    images: [
+      {
+        src: "images/portfolio/Static Routing.png",
+      },
+    ],
   },
   {
-    id: 6,
+    id: 10,
     title: "Inventory & Procurement System",
     category: "Spreadsheet",
     tags: ["Google Sheets", "Microsoft Excel"],
@@ -188,7 +207,7 @@ const projects: Project[] = [
     demoLabel: "Lihat Spreadsheet ↗",
   },
   {
-    id: 7,
+    id: 11,
     title: "HR Management System",
     category: "Spreadsheet",
     tags: ["Google Sheets", "Microsoft Excel"],
@@ -204,7 +223,7 @@ const projects: Project[] = [
     demoLabel: "Lihat Spreadsheet ↗",
   },
   {
-    id: 8,
+    id: 12,
     title: "Expense Tracker Monthly",
     category: "Spreadsheet",
     tags: ["Google Sheets", "Microsoft Excel"],
@@ -220,7 +239,7 @@ const projects: Project[] = [
     demoLabel: "Lihat Spreadsheet ↗",
   },
   {
-    id: 9,
+    id: 13,
     title: "Kocek by Djoin",
     category: "Graphic Design",
     tags: ["Adobe Photoshop", "Adobe Illustrator", "Canva", "Figma", "Google Slides"],
@@ -234,7 +253,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 10,
+    id: 14,
     title: "Travel Design",
     category: "Graphic Design",
     tags: ["Adobe Photoshop", "Adobe Illustrator", "Canva"],
@@ -248,7 +267,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 11,
+    id: 15,
     title: "Food Design",
     category: "Graphic Design",
     tags: ["Adobe Photoshop", "Adobe Illustrator", "Canva"],
